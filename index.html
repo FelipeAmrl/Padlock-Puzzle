@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Padlock Puzzle</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat:wght@600&display=swap" rel="stylesheet"> 
+    <script src="./main.js" defer></script>
+</head>
+<body>
+    <div id="error">Please insert all 3 numbers before trying!</div>
+    <main>
+        <h1>Padlock Puzzle</h1>
+        <h2>Crack the code using the clues</h2>
+        <p>
+            291 - One digit is right and is in its place.</br>
+            245 - One digit is right but is in the wrong place.</br>
+            463 - Two digits are right but both are in wrong place.</br>
+            578 - No digit is correct.</br>
+            569 - One digit is right but in the wrong place.
+        </p>
+
+        <div id="padlock">
+            <img id="padlockImage" src="./assets/lock.png"/>
+        </div>
+
+        <form>
+            <container id="inputs">
+                <input id="number1" type="text"/>
+                <input id="number2" type="text"/>
+                <input id="number3" type="text"/>
+            </container>
+            <button id="btnTry" >Try</button>
+        </form>
+        
+        <div class="solved hide">
+            <h3></h3>
+            <button id="btnReset">Play again</button>
+        </div>
+    </main>
+</body>
+</html>
